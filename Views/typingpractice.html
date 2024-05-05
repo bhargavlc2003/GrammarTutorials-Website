@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styletyping.css" />
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>Typing Practice</title>
+  </head>
+  <body>
+    <header>
+      <!-- <div class="wrapper"> -->
+          <div class="logo">
+              <a href="#">Learn <span id="english">English</a>
+          </div>
+          <div class="header_right">
+              <ul class="menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="select.html">Services</a></li>
+                </ul>  
+              </div>
+              <!-- </div> -->
+              </header>
+    <div class="maincontent">          
+    <div class="container">
+      <h2>Typing Practice with Spelling Checker</h2>
+      <p>
+        Check your English text for grammar, spelling, and Punctuation Errors all at once!
+      </p>
+
+      <textarea
+        id="textarea"
+        class="textarea"
+        placeholder="Enter Your Text Here"
+        maxlength="500"
+        
+      ></textarea>
+      <div id="spellingErrors"></div>
+      <div class="button-container">
+      <button class="button" value="Clear" onclick="javascript:eraseText();">Clear</button>
+      <button onclick="copyText()">Copy Text</button>
+      <!-- <button class="button" onclick="window.location.href='select.html'">Menu</button>
+      <button class="button" onclick="window.location.href='index.html'">Home</button> -->
+      </div>
+
+      <div class="counter-container">
+        <p>Total character: <span id="total-counter"> 0</span></p>
+        <p>
+          Remaining:
+          <span class="remaining-counter" id="remaining-counter">500</span>
+        </p>
+      </div>
+    </div>
+  </div>
+    <script src="scripttyping.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data</title>
+  <script>
+    // Function to prompt for passkey and reveal content if correct
+    function checkPasskey() {
+      var passkey = prompt("Please enter the passkey:");
+      if (passkey === "admin") { 
+        document.getElementById("content").style.display = "block";
+      } else {
+        
+        alert("Incorrect passkey. Access denied.");
+      }
+    }
+    
+    // Call the function to prompt for passkey when the page loads
+    window.onload = checkPasskey;
+    </script>
+    <style>
+      table,th,td{
+        border: solid black 1px;
+        border-collapse: collapse;
+      }
+    </style>
+</head>
+<body>
+  <h1>Data</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% data.forEach(item => { %>
+        <tr>
+          <td><%= item.name %></td>
+          <td><%= item.email %></td>
+          <td><%= item.age %></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+  <a href="/">Back to user registration</a>
+</body>
+</html>

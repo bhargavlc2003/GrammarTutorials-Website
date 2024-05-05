@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <!-- <div class="wrapper"> -->
+      <div class="logo">
+        <a href="#">Learn <span id="english">English</a>
+        </div>
+        <div class="header_right">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/data">Users</a></li>
+                <li><a href="select.html">Services</a></li>
+              </ul>  
+            </div>
+            <!-- </div> -->
+            </header>
+   
+            <div class="mysec">
+              <form action="/submit" method="post">
+                  <div class="form-container">
+                      <h2 id="sub">Please Enter the below details:</h2>
+                      <br>
+                      <label for="Name">Name:</label>
+                      <input type="text" id="name" name="name" placeholder="Enter your Name:" required>
+                      <br />
+                      
+                      <label for="email">Email:</label>
+                      <input type="text" id="email" name="email" placeholder="Enter Email:" required>
+                      <br />
+                      <label for="age">Age:</label>
+                      <input type="text" id="age" name="age" placeholder="Enter Age:" required>
+                      <br />
+                  
+                      <h4>Purpose:</h4>
+                      <input type="radio" id="Skills" name="purpose" value="Skills"><label>Skills </label><br>
+                      <input type="radio" id="Hobby" name="purpose" value="Hobby"><label>Hobby </label><br>
+                      <input type="radio" id="Examination" name="purpose" value="Examination"><label>Examination </label>
+                      
+                      
+      
+                      <br />
+                      <br />
+                    
+                       <div class="pagebuttons">
+                      <input type="submit" value="Submit">
+                      <input name='reset' type="reset" value='Reset'>
+      
+                      <button class="btn" type="submit" onclick="window.location.href='index.html'">Home</button>
+                      <br>
+                      <a href="/data">click here for data entries</a>
+                    </div>
+                  </div>
+                  
+              </form>
+          </div>
+      
+
+</body>
+</html>
+
